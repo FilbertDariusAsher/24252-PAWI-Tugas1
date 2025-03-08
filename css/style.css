@@ -16,25 +16,131 @@ body {
     position: relative;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
 .logo a {
     font-size: 50px;
-    font-weight: 800;
-    float: left;
-    font-family: Courier ;
-    color: #D3E671;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+    color: #364f6b !important;
+    text-decoration: none;
+    white-space: nowrap; 
+    display: inline-block;
+    margin-left: -120px;
 }
 
 .menu {
-    float: right;
-}
-
-nav{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    line-height: 80px;
+    width: 95%;
+    line-height: 25px;
     position: sticky;
     position: -webkit-sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     top: 0;
     background: #FFFFFF;
+    margin-top: -50px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+#beranda {
+    margin-top: 100px; 
+}
+.logo {
+    position: relative;
+    z-index: 10; 
+}
+.wrapper {
+    background: #fff; 
+    padding: 10px 20px;
+}
+#beranda img {
+    margin-top: -50px; 
+    margin-left: -150px; 
+}
+.container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+}
+#beranda img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover; 
+}
+
+.content {
+    flex: 1; 
+    max-width: 50%;
+    margin-top: -50px; 
+    margin-left: 70px; 
+}
+
+.content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+.tbl-biru {
+    display: inline-block;
+    background-color: #3f72af; 
+    color: white;
+    padding: 15px 20px 15px 20px; /* Ukuran padding tombol */
+    border-radius: 70px; /* Membuat sudut tombol melengkung */
+    font-weight: bold;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background 0.3s ease; /* Efek transisi hover */
+    cursor: pointer;
+}
+
+.tbl-biru:hover {
+    background-color: #805ae2; /* Warna saat dihover */
 }
