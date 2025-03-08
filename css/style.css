@@ -14,36 +14,42 @@ body {
     width: 1100px;
     margin: auto;
     position: relative;
+    background: #3f72af;
 }
 
 .logo {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
+    position: fixed;
+    z-index: 10; 
 }
-
 .logo a {
     font-size: 50px;
     font-weight: 900;
     font-family: "Courier New", Courier, monospace;
-    color: #364f6b !important;
+    color: #083262 !important;
     text-decoration: none;
     white-space: nowrap; 
     display: inline-block;
     margin-left: -120px;
+    overflow: hidden;
 }
 
 .menu {
-    width: 95%;
-    line-height: 25px;
+    width: 85%;
+    line-height: 80px;
     position: sticky;
     position: -webkit-sticky;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     top: 0;
-    background: #FFFFFF;
-    margin-top: -50px;
+    background: transparent;
+    margin-top: -22px;
+    z-index: 1;
+    overflow: hidden;
+    
 }
 
 .menu ul {
@@ -61,8 +67,9 @@ body {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 36px 0px 36px;
     text-decoration: none;
+    
 }
 .menu ul li a:hover {
     text-decoration: underline;
@@ -70,13 +77,10 @@ body {
 #beranda {
     margin-top: 100px; 
 }
-.logo {
-    position: relative;
-    z-index: 10; 
-}
 .wrapper {
     background: #fff; 
     padding: 10px 20px;
+    
 }
 #beranda img {
     margin-top: -50px; 
@@ -84,37 +88,44 @@ body {
 }
 .container {
     display: flex;
-    align-items: flex-start; 
-    gap: 20px; 
+    align-items: center; 
+    gap: 20px;
     padding: 20px;
+    overflow: visible !important;
+
 }
 #beranda img {
     width: 500px;
     height: 450px;
     object-fit: cover; 
+    display: block;
+    border-radius: 15px;
+
 }
 
 .content {
     flex: 1; 
     max-width: 50%;
-    margin-top: -50px; 
+    margin-top: -100px; 
     margin-left: 70px; 
 }
 
 .content h1 {
+    font-family:sans-serif;
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #1e124f;
     margin-bottom: 15px;
+
 }
 
 .content p {
     font-size: 18px;
-    color: #666;
+    color: #000000;
     line-height: 1.6;
     margin-top: 10px;
-}
 
+}
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -133,14 +144,25 @@ body {
     display: inline-block;
     background-color: #3f72af; 
     color: white;
-    padding: 15px 20px 15px 20px; /* Ukuran padding tombol */
-    border-radius: 70px; /* Membuat sudut tombol melengkung */
+    padding: 15px 20px 15px 20px; 
+    border-radius: 70px; 
     font-weight: bold;
-    text-decoration: none; /* Menghilangkan garis bawah */
-    transition: background 0.3s ease; /* Efek transisi hover */
+    text-decoration: none; 
+    transition: background 0.3s ease; 
     cursor: pointer;
 }
 
 .tbl-biru:hover {
-    background-color: #805ae2; /* Warna saat dihover */
+    background-color: #805ae2; 
+}
+.produk {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px;
+}
+body {
+    background-color: #3f72af !important;  
+    color: white; 
 }
